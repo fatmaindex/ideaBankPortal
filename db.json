@@ -1,0 +1,146 @@
+{
+  "ideas": [
+    {
+      "id": "1",
+      "userName": "fatma",
+      "title": "Innovative Eco-Friendly Packaging",
+      "description": "Design packaging that is fully biodegradable and made from recycled materials.",
+      "problemDescription": "Plastic waste is a major environmental issue.",
+      "ideaEffect": "Reduces environmental pollution and promotes sustainability."
+    },
+    {
+      "id": "2",
+      "userName": "jana",
+      "title": "Smart Water Usage App",
+      "description": "An app that monitors water usage in homes and provides tips to conserve water.",
+      "problemDescription": "Excessive water usage leads to scarcity in many regions.",
+      "ideaEffect": "Encourages responsible water usage and reduces utility bills."
+    },
+    {
+      "id": "3",
+      "userName": "layla",
+      "title": "Virtual Reality Travel Experience",
+      "description": "A platform offering virtual reality tours of popular tourist destinations.",
+      "problemDescription": "Travel can be expensive and not accessible to everyone.",
+      "ideaEffect": "Makes travel experiences available to more people without the cost."
+    },
+    {
+      "id": "4",
+      "userName": "ahmed",
+      "title": "AI-Powered Personal Trainer",
+      "description": "An AI app that creates personalized workout and nutrition plans based on user goals.",
+      "problemDescription": "Many people struggle to maintain a fitness routine.",
+      "ideaEffect": "Improves health and fitness with tailored plans."
+    },
+    {
+      "id": "5",
+      "userName": "nora",
+      "title": "Community Garden Initiative",
+      "description": "Establish community gardens in urban areas to promote local food production.",
+      "problemDescription": "Urban areas often lack access to fresh produce.",
+      "ideaEffect": "Promotes healthier eating habits and community engagement."
+    },
+    {
+      "id": "6",
+      "userName": "khalid",
+      "title": "Blockchain for Supply Chain Transparency",
+      "description": "Use blockchain technology to track product origins and supply chains.",
+      "problemDescription": "Lack of transparency in supply chains can lead to ethical issues.",
+      "ideaEffect": "Increases consumer trust and promotes ethical sourcing."
+    },
+    {
+      "id": "7",
+      "userName": "sami",
+      "title": "Telemedicine Platform",
+      "description": "A platform that connects patients with doctors for virtual consultations.",
+      "problemDescription": "Access to healthcare can be limited, especially in rural areas.",
+      "ideaEffect": "Increases access to healthcare services."
+    },
+    {
+      "id": "8",
+      "userName": "salma",
+      "title": "Personal Finance Management App",
+      "description": "An app that helps users manage their budgets and savings effectively.",
+      "problemDescription": "Many people struggle with managing their finances.",
+      "ideaEffect": "Improves financial literacy and stability."
+    },
+    {
+      "id": "9",
+      "userName": "leila",
+      "title": "Online Learning Platform for Skills Development",
+      "description": "A platform offering courses on various skills to enhance employability.",
+      "problemDescription": "Many people need upskilling to meet job market demands.",
+      "ideaEffect": "Boosts employability and career growth."
+    },
+    {
+      "id": "10",
+      "userName": "tariq",
+      "title": "Local Art Showcase App",
+      "description": "An app that connects local artists with potential buyers and galleries.",
+      "problemDescription": "Local artists often struggle to gain exposure.",
+      "ideaEffect": "Promotes local art and supports artists in gaining recognition."
+    }
+  ],
+  "users": [
+    {
+      "id": "1",
+      "name": "fatma",
+      "email": "fatma@example.com",
+      "phone": "123-456-7890"
+    },
+    {
+      "id": "2",
+      "name": "jana",
+      "email": "jana@example.com",
+      "phone": "098-765-4321"
+    },
+    {
+      "id": "3",
+      "name": "ahmed",
+      "email": "ahmed@example.com",
+      "phone": "234-567-8901"
+    },
+    {
+      "id": "4",
+      "name": "layla",
+      "email": "layla@example.com",
+      "phone": "345-678-9012"
+    },
+    {
+      "id": "5",
+      "name": "nora",
+      "email": "nora@example.com",
+      "phone": "456-789-0123"
+    },
+    {
+      "id": "6",
+      "name": "sami",
+      "email": "sami@example.com",
+      "phone": "567-890-1234"
+    },
+    {
+      "id": "7",
+      "name": "leila",
+      "email": "leila@example.com",
+      "phone": "678-901-2345"
+    },
+    {
+      "id": "8",
+      "name": "khalid",
+      "email": "khalid@example.com",
+      "phone": "789-012-3456"
+    },
+    {
+      "id": "9",
+      "name": "salma",
+      "email": "salma@example.com",
+      "phone": "890-123-4567"
+    },
+    {
+      "id": "10",
+      "name": "tariq",
+      "email": "tariq@example.com",
+      "phone": "901-234-5678"
+    }
+  ]
+}

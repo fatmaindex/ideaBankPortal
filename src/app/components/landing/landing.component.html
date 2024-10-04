@@ -1,0 +1,21 @@
+<h1>Proposed Ideas</h1>
+<div class="table-responsive">
+  <table class="table table-primary">
+    <thead>
+      <tr>
+        <th scope="col">ID</th>
+        <th scope="col">Name</th>
+        <th scope="col">Title</th>
+        <th scope="col">Details</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr class="" *ngFor="let idea of showenIdeas; let index = index">
+        <td scope="col">{{ index + 1 }}</td>
+        <td scope="col">{{ idea.userName}}</td>
+        <td scope="col">{{ idea.title }}</td>
+        <td scope="col"><button class="badge bg-primary" (click)="detailsOnClick(idea.id)">Details</button></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
