@@ -1,5 +1,6 @@
-<div class="container-fluid col-9">
-    <h1>Submit Your Idea</h1>
+<div class="formSection">
+  <div class="container-fluid col-6 formContainer">
+    <h1>write Your Idea</h1>
     <form #ideaForm="ngForm" (ngSubmit)="onSubmitIdea(ideaForm)">
       <div class="form-group">
         <label for="title">Title</label>
@@ -12,7 +13,7 @@
           placeholder="Write the title here..."
         />
       </div>
-  
+
       <div class="form-group">
         <label for="description">Description</label>
         <textarea
@@ -23,7 +24,7 @@
           placeholder="Describe the idea..."
         ></textarea>
       </div>
-  
+
       <div class="form-group">
         <label for="problemDescription">Problem Description</label>
         <textarea
@@ -33,7 +34,7 @@
           placeholder="Describe the problem..."
         ></textarea>
       </div>
-  
+
       <div class="form-group">
         <label for="ideaEffect"> Proposed Idea Effect</label>
         <textarea
@@ -43,10 +44,8 @@
           placeholder="Explain the impact of the idea..."
         ></textarea>
       </div>
-  
-      <button type="submit" class="btn btn-primary">
-        Submit
-      </button>
+
+      <button type="submit" class="btn submitBtn">Submit Your Idea</button>
     </form>
   </div>
-  
+</div>
