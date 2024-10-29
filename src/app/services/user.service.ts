@@ -9,16 +9,17 @@ import { User } from '../models/user';
 export class UserService {
 
   private currentUserNameSubject = new BehaviorSubject<string | null>(null);
-  currentUserName$=this.currentUserNameSubject.asObservable()
+  currentUserName$ = this.currentUserNameSubject.asObservable()
 
   constructor(private Http: HttpClient) { }
-
   setUserName(name: string) {
     this.currentUserNameSubject.next(name);
   }
   // Method to check if user logged
-  getUser(newUser: User): Observable<any[]> {
-    return this.Http.get<any>(`${environment.userUrl}?name=${newUser.name}&email=${newUser.email}`);
+  checkUserLogeed(newUser: User): Observable<any[]> {
+    return this.Http.get<any>(`${environment.userUrl}?name=${newUser.name}&password=${newUser.password}`)
   }
-
+  checkUserName(useName: string): Observable<any[]> {
+    return this.Http.get<any>(`${environment.userUrl}?name=${useName}`)
+  }
 }

@@ -13,11 +13,13 @@
   align-items: center;
 }
 .formContainer {
+  width: 40%;
   height: 80%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding: 40px;
   background-color: white;
   border-radius: 10px;
   -webkit-border-radius: 10px;
@@ -25,12 +27,22 @@
   -ms-border-radius: 10px;
   -o-border-radius: 10px;
 }
+.ideaForm{
+width: 100%;
+display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.form-group{
+  width: 100% ;
+}
 .form-group input,
 .form-group textarea {
   border: none;
-  width: 500px;
+  width: 100% !important;
   margin-bottom: 20px;
-  padding: 10px 15px;
+  padding: 10px 10px;
   box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
 }
 .form-group input:focus,
@@ -61,4 +73,22 @@
   -moz-transform: scale(1.05);
   -ms-transform: scale(1.05);
   -o-transform: scale(1.05);
+}
+@media (max-width:1024px) {
+  .formContainer {
+    width: 45%;
+
+  }
+}
+@media (max-width:768px) {
+  .formContainer {
+    width: 55%;
+
+  }
+}
+@media (max-width:567px) {
+  .formContainer {
+    width: 65%;
+
+  }
 }

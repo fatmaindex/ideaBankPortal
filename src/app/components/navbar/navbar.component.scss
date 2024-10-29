@@ -14,6 +14,7 @@
 }
 .nav a {
   color: rgb(108, 122, 224);
+  position: relative;
 }
 .nav h2 {
   color: rgb(108, 122, 224);
@@ -21,3 +22,21 @@
   font-size: 24px;
   font-weight: bold;
 }
+.logoutBtn{
+  background-color: rgb(108, 122, 224);
+  color: white;
+  padding: 5px 20px;
+  border-radius: 20px;
+  width: 100%;
+  border: none;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+}
+.logoutBtn:hover {
+  background-color: rgb(88, 102, 204);
+  transform: scale(1.05);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+

@@ -1,27 +1,69 @@
-# IdeaBank
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.2.6.
+# Login Application
 
-## Development server
+## Description
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+This is an Angular-based login application that uses a simple authentication mechanism with JSON server for user credentials. Users can log in using the provided credentials, and their session is managed via `localStorage`.
 
-## Code scaffolding
+## Features
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+- User login with validation (username and password).
+- Session management using `localStorage`.
+- Authentication using a mock backend (`JSON server`).
+- Protected routes based on user authentication status.
 
-## Build
+## Table of Contents
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+- [Installation](#installation)
+- [Running the Application](#running-the-application)
+- [Example Credentials](#example-credentials)
+- [Login Functionality](#login-functionality)
+- [Logout Functionality](#logout-functionality)
+- [API Integration](#api-integration)
 
-## Running unit tests
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+## Installation
 
-## Running end-to-end tests
+1. Clone the repository:
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+    ```bash
+    git clone https://github.com/fatmaindex/ideaBankPortal.git
+    ```
 
-## Further help
+## Running the Application
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+1. To start the Angular application, run the following command:
+
+    ```bash
+    ng serve
+    ```
+
+2. The application will be served at `http://localhost:4200`.
+
+3. The app will communicate with the `JSON server` running on `http://localhost:3003`.
+
+## Example Credentials
+
+Use the following credentials to log into the application:
+
+- **Username**: `fatma`
+- **Password**: `password123`
+
+- **Username**: `nora`
+- **Password**: `password345`
+
+## Login Functionality
+
+- Users can log in by providing the correct username and password.
+- If the credentials are correct, a session token is stored in `localStorage` to keep the user logged in across page refreshes.
+- Upon login, the user is redirected to the landing page.
+
+## Logout Functionality
+
+- Users can log out by clicking the **Logout** button.
+- The session token is removed from `localStorage`, and the user is redirected to the login page.
+
+## API Integration
+
+The application uses the `JSON server` to simulate a backend service. The login service queries the server to validate user credentials. 
+
