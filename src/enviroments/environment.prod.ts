@@ -1,5 +1,5 @@
 export const environment = {
     production: true,
-    ideasUrl: 'http://localhost:3003/ideas',
-    userUrl:'http://localhost:3003/users'
+    ideasUrl: 'http://localhost:3007/ideas',
+    userUrl:'http://localhost:3007/users'
   };

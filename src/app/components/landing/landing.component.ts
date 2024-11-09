@@ -15,7 +15,6 @@ export class LandingComponent {
       this.showenIdeas = ideas;
     })
   }
-
   detailsOnClick(ideaID:string) {
     this.router.navigate(['/ideaDetails',ideaID])
   }

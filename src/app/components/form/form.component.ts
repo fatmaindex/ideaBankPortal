@@ -28,7 +28,13 @@ export class FormComponent {
       let newIdeaID = (ideas.length + 1).toString()
 
       // create new idea
-      const newIdea = new Idea(newIdeaID, this.loggedInUserName, title, description, problemDescription, ideaEffect);
+      let ideaStatus="New"
+      let submissionDate=new Date().toISOString()
+      let criterias={"Alignment":0,"innovation":0,"feasibility":0,"scalability":0}
+      let totalEvaluation=0
+      let comment=""
+      let isRated=false
+      const newIdea = new Idea(newIdeaID, this.loggedInUserName, title, description, problemDescription, ideaEffect,submissionDate,ideaStatus,criterias,totalEvaluation,comment,isRated);
       // send the idea to the api
       this.ideaService.createIdea(newIdea).subscribe(
         (newIdea) => {
