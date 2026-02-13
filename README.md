@@ -1,69 +1,83 @@
+# 💡 Idea Bank - User Portal
 
-# Login Application
+![Angular](https://img.shields.io/badge/Angular-DD0031?style=for-the-badge&logo=angular&logoColor=white)
+![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white)
+![RxJS](https://img.shields.io/badge/RxJS-B7178C?style=for-the-badge&logo=reactivex&logoColor=white)
 
-## Description
+**IdeaBankPortal** is the user-facing side of the Idea Bank ecosystem. It allows innovative thinkers to register, submit their creative ideas through a structured form, and track their submissions.
 
-This is an Angular-based login application that uses a simple authentication mechanism with JSON server for user credentials. Users can log in using the provided credentials, and their session is managed via `localStorage`.
+---
 
-## Features
+## 🚀 Key Features
 
-- User login with validation (username and password).
-- Session management using `localStorage`.
-- Authentication using a mock backend (`JSON server`).
-- Protected routes based on user authentication status.
+* **Idea Submission Form:** A dedicated interface for users to submit new ideas with titles, descriptions, and categories.
+* **User Authentication:** Secure login/logout system using `localStorage` to persist user sessions.
+* **Dynamic Landing Page:** A welcoming interface that guides users through the platform's features.
+* **Responsive Navbar:** Real-time navigation that updates based on the user's authentication status (Login/Logout).
+* **Protected Submission:** Use of `AuthGuard` to ensure only registered users can access the submission form and idea details.
 
-## Table of Contents
+---
 
-- [Installation](#installation)
-- [Running the Application](#running-the-application)
-- [Example Credentials](#example-credentials)
-- [Login Functionality](#login-functionality)
-- [Logout Functionality](#logout-functionality)
-- [API Integration](#api-integration)
+## 🛠 Technical Architecture
+
+### 📂 Folder Structure Highlights
+* **Components:** * `form/`: Where the magic happens (Idea creation).
+    * `landing/`: The main entry point for users.
+    * `idea-details/`: View specific details about a submitted idea.
+* **Services:**
+    * `UserService`: Manages profile names and validates credentials.
+    * `IdeaService`: Handles sending new ideas to the backend via `POST`.
+    * `AuthService`: Controls the global login state using `BehaviorSubject`.
 
 
-## Installation
 
-1. Clone the repository:
+---
 
-    ```bash
-    git clone https://github.com/fatmaindex/ideaBankPortal.git
-    ```
+## 🔧 Installation & Setup
 
-## Running the Application
+1. **Clone the repository:**
+   ```bash
+   git clone [https://github.com/fatmaindex/ideaBankPortal.git](https://github.com/fatmaindex/ideaBankPortal.git)
+   cd ideaBankPortal
 
-1. To start the Angular application, run the following command:
+Install dependencies:
 
-    ```bash
-    ng serve
-    ```
+npm install
 
-2. The application will be served at `http://localhost:4200`.
 
-3. The app will communicate with the `JSON server` running on `http://localhost:3003`.
+Environment Sync:
+Ensure your backend (JSON Server) is running on the port specified in environments/environment.ts.
 
-## Example Credentials
+Run the Portal:
 
-Use the following credentials to log into the application:
+ng serve
 
-- **Username**: `fatma`
-- **Password**: `password123`
 
-- **Username**: `nora`
-- **Password**: `password345`
+Access the portal at:
+http://localhost:4200
 
-## Login Functionality
+📡 API Integration
 
-- Users can log in by providing the correct username and password.
-- If the credentials are correct, a session token is stored in `localStorage` to keep the user logged in across page refreshes.
-- Upon login, the user is redirected to the landing page.
+The portal communicates with the central Idea Bank API:
 
-## Logout Functionality
+Action	Service Method	HTTP Method
+Submit New Idea	createIdea()	POST
+View All Ideas	getIdeas()	GET
+Check Username	checkUserName()	GET
+Validate Login	checkUserLogeed()	GET
+🛡 Security
 
-- Users can log out by clicking the **Logout** button.
-- The session token is removed from `localStorage`, and the user is redirected to the login page.
+Guard: AuthGuard is implemented to protect the /form and /idea-details routes.
 
-## API Integration
+Feedback: Uses MatSnackBar to notify users if they try to access restricted areas without logging in.
 
-The application uses the `JSON server` to simulate a backend service. The login service queries the server to validate user credentials. 
+📝 Development Note
 
+This portal is designed to be lightweight and user-friendly, focusing on a seamless "Idea Submission" flow. It works in tandem with the Admin Dashboard to complete the idea lifecycle.
+
+🔗 Related Projects
+
+This project is part of the Idea Bank Ecosystem. To see the administration and evaluation side, check out:
+
+Idea Bank Admin Dashboard
+ - Where admins review and rate submitted ideas.
